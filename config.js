@@ -12,11 +12,18 @@ const mongoose = require('mongoose');
 //Note for connect database from mongo db compass
 //mongoose.connect('mongodb://0.0.0.0:27017/collegeadmission')
 //Note for connect database from mongo db cluster
-mongoose.connect('mongodb+srv://itscpankaj:RJpuZkwHWoLI5Ov6@cluster0.gwhz0pz.mongodb.net/collegeadmission')
 
-.then(() => console.log('Mongodb Connected Successfully'))
 
-.catch((err) => { console.error(err); });
+//mongoose.connect('mongodb+srv://itscpankaj:RJpuZkwHWoLI5Ov6@cluster0.gwhz0pz.mongodb.net/collegeadmission')
+
+//.then(() => console.log('Mongodb Connected Successfully'))
+
+//.catch((err) => { console.error(err); });
+
+
+mongoose.connect('mongodb+srv://itscpankaj:RJpuZkwHWoLI5Ov6@cluster0.gwhz0pz.mongodb.net/collegeadmission', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to MongoDB Atlas!'))
+  .catch(err => console.error('Failed to connect to MongoDB Atlas', err));
 
 
 
