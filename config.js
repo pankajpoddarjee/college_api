@@ -10,9 +10,9 @@ const mongoose = require('mongoose');
 // });
 
 //Note for connect database from mongo db compass
-mongoose.connect('mongodb://0.0.0.0:27017/collegeadmission')
+//mongoose.connect('mongodb://0.0.0.0:27017/collegeadmission')
 //Note for connect database from mongo db cluster
-//mongoose.connect('mongodb+srv://itscpankaj:RJpuZkwHWoLI5Ov6@cluster0.gwhz0pz.mongodb.net/collegeadmission')
+mongoose.connect('mongodb+srv://itscpankaj:RJpuZkwHWoLI5Ov6@cluster0.gwhz0pz.mongodb.net/collegeadmission')
 
 .then(() => console.log('Mongodb Connected Successfully'))
 
