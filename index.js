@@ -8,7 +8,8 @@ require('dotenv').config();
 
 
 
-const PORT = process.env.NODE_PORT;
+//const PORT = process.env.NODE_PORT;
+const PORT = process.env.NODE_PORT || 4000;
 
 require("./config");
 
